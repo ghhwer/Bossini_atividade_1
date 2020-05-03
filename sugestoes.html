@@ -1,0 +1,196 @@
+<!doctype html>
+
+<html lang="pt">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    
+    <!--Headers-->
+    <title>Atividade Maua - BR</title>
+    <meta name="Exemplo HTML Basico Maua" content="Atividade 3">
+    <meta name="author" content="Caio Petrelli Cominato">
+    <meta name="ra" content="17.00100-5">
+    
+    <!-- Stylesheets-->
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <link rel="stylesheet" type="text/css" href="src/style/maua.css">
+    </head>
+
+    <body>
+        <!--Navbar-->
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-maua">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img src="src/img/logo_maua.png"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="professores.html">Professores</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="sugestoes.html">Sugestões</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Login
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right login-dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="p-3">
+                                <span>Login do usuário</span>
+                            </div>
+                            
+                            <div class="dropdown-divider"></div>
+                            <div class="input-group p-3">
+                                <input type="text" class="form-control" placeholder="Usuário" aria-label="Recipient's username" >
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                            <div class="input-group p-3">
+                                <input type="password" class="form-control" placeholder="Senha" aria-label="Recipient's username" >
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="input-group mb-2 p-3">
+                                <input type="button" class="form-control" value="Login">
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Main Content-->
+        <div class="content">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-maua-breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active">Sugestões</li>
+                </ol>
+              </nav>
+            <div class="row mt-5">
+                <div class="col-md-6 col-sm-12">
+                    <div class="card bg-dark">
+                        <img class="card-img" src="src/img/sugestao.jpg" style="opacity: 45%;" alt="">
+                        <div class="card-img-overlay text-light">                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Enviar uma sugestão</h5>
+                            <form action="javascript:void(0);">
+                                <div class="form-group">
+                                    <label for="sugestoes">Nome</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                        placeholder="">
+                                    <small id="emailHelp" class="form-text text-muted"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sugestoes">Email para contato</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                        placeholder="">
+                                    <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar seu email com
+                                        terceiros</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sugestoes">Assunto</label>
+                                    <input type="text" class="form-control" id="assunto" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sugestoes">Sugestão</label>
+                                    <textarea type="texto" class="form-control" id="sugestao_text" placeholder=""
+                                        style="min-height: 7em;"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sel1">Selecione uma opção:</label>
+                                    <select class="form-control">
+                                        <option value="1">Não sou aluno do Instituto Mauá de Tecnologia</option>
+                                        <option value="2">Sou aluno do Instituto Mauá de Tecnologia</option>
+                                    </select>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                                    <label class="form-check-label" for="exampleCheck1">Eu desejo receber emails promocionais e notícias
+                                        do Instituto Mauá de Tecnologia</label>
+                                </div>
+                                
+                                <button class="btn btn-primary mt-3" type="click" onclick="Swal.fire({position: 'top-end', icon: 'success',title: 'Email Enviado!',showConfirmButton: false,timer: 1500})">Enviar</button> 
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form>
+        
+        </div>
+        
+        </div>
+        <!--Footer-->
+        <footer class="page-footer font-small bg-maua pt-4 mt-5">
+            <div class="container-fluid text-center text-md-left ">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                <h5 class="text-uppercase">Campus São Caetano do Sul</h5>
+                <p>Praça Mauá 1 São Caetano do Sul - SP</p>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3" >
+                <div class="col-md-3 mb-md-0 mb-3">
+                <ul class="list-unstyled list-maua-footer">
+                    <li>
+                    <a href="http://www.aexam.com/">Associação dos Ex-alunos da Mauá</a>
+                    </li>
+                    <li>
+                    <a href="https://maua.br/conheca-maua/avaliacao-institucional">Avaliações</a>
+                    </li>
+                    <li>
+                    <a href="https://maua.br/graduacao/relacoes-internacionais/universidades-parceiras">Universidades Parceiras</a>
+                    </li>
+                    <li>
+                    <a href="https://maua.br/conheca-maua/campus-sao-caetano-sul">Centro de Esporte e Atividades Físicas</a>
+                    </li>
+                </ul>
+        
+                </div>
+        
+                <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="text-uppercase">Contato</h5>
+        
+                <ul class="list-unstyled list-maua-footer">
+                    <li>
+                    <a href="tel:08000193100">0800 019 3100</a>
+                    </li>
+                    <li>
+                    <a href="https://maua.br/index/chat?_ga=1.106652550.468963231.1464200408">Chat Online</a>
+                    </li>
+                    <li>
+                    <a href="https://api.whatsapp.com/send?phone=5508000193100">WhatApp</a>
+                    </li>
+                </ul>
+        
+                </div>  
+            </div>  
+            </div>
+        
+            <div class="footer-copyright text-center py-3">© 2020 Todos os direitos reservados:
+            <a href="https://maua.br/"> maua.br</a>
+            </div>
+        
+        </footer>
+    </body>
+
+    <!--JS Stuff-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+</html>
+
